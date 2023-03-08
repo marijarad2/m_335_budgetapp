@@ -8,17 +8,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--on below line we are creating edit text
-        for adding a new item to list-->
+
     <EditText
         android:id="@+id/idEdtItemName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         android:layout_toLeftOf="@id/idBtnAdd"
-        android:hint="Enter item name to add in ist" />
+        android:hint="Neue hinzuffdgen" />
 
-    <!--button for adding item from edit text to list-->
+
     <Button
         android:id="@+id/idBtnAdd"
         android:layout_width="wrap_content"
@@ -28,7 +27,7 @@
         android:text="Add"
         android:textAllCaps="false" />
 
-    <!--list view to display list of languages-->
+
     <ListView
         android:id="@+id/idLVLanguages"
         android:layout_width="match_parent"
