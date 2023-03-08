@@ -130,4 +130,12 @@
         android:src="@drawable/ic_add"
         app:borderWidth="0dp"/>
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="636dp" />
+
 </RelativeLayout>
