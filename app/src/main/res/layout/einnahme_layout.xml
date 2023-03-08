@@ -6,58 +6,87 @@
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:id="@+id/textView2"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Einnahmen"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="76dp"
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:text="+1200"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/green"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="100dp"
+                android:layout_width="146dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/allgemein" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="145dp"
+                android:layout_height="132dp"
+                app:srcCompat="@drawable/ferienjob" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="147dp"
+                android:layout_height="129dp"
+                app:srcCompat="@drawable/download" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="143dp"
+                android:layout_height="127dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Einnahmen"
-        android:textSize="50sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="41dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="76dp"
-        android:layout_height="41dp"
-        android:text="+1200"
-        android:textColor="@color/green"
-        android:gravity="center"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="137dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="146dp"
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/allgemein"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="294dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="145dp"
-        android:layout_height="132dp"
-        app:srcCompat="@drawable/ferienjob"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="294dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="147dp"
-        android:layout_height="129dp"
-        app:srcCompat="@drawable/download"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="451dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="143dp"
-        android:layout_height="127dp"
-        app:srcCompat="@drawable/Lohn"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="453dp" />
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="button5"
+        tools:layout_editor_absoluteY="731dp" />
 
     <Button
         android:id="@+id/button5"
